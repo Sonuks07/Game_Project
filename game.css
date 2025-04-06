@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: red;
+   overflow: hidden;
+    
+}
+.gameContainer{
+    background-image: url(background1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+.sonu{
+    background-image: url(sonu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 120px;
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+}
+.monster{
+    background-image: url(Monster.webp);
+    background-size: cover;
+    height: 105px;
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 55vw;
+}
+
+.animateSonu{
+    animation: sonu 0.6s linear;
+}
+
+.monsterAni{
+    animation: monsterAni 5s linear infinite;
+}
+
+.gameOver{
+    position: relative;
+    top: 65px;
+    font-size: 55px;
+    text-align: center;
+
+}
+#scoreCont{
+    position: absolute;
+    left: 23px;
+    top: 23px;
+    border: 2px solid black;
+    padding: 10px;
+    width: 90px;
+}
+
+@keyframes sonu{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 500px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes monsterAni{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -150vw;
+    }
+}
